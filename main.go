@@ -15,9 +15,9 @@ func main() {
 
 	r := chi.NewRouter()
 
-	r.Post("/task", handler.CreateTask)
-	r.Get("/task", handler.GetTask)
-	r.Delete("/task", handler.DeleteTask)
+	r.Post("/tasks", handler.CreateTask)
+	r.Get("/tasks/{id}", handler.GetTask)
+	r.Delete("/tasks/{id}", handler.DeleteTask)
 
 	log.Println("Server running on :8080")
 	err := http.ListenAndServe(":8080", r)
