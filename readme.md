@@ -51,3 +51,9 @@ DELETE /tasks/id
 ## ТЕСТИРОВАНИЕ
 Рекомендуется использовать curl или Postman для отправки запросов.
 
+1.curl -X POST http://localhost:8080/
+
+2.curl http://localhost:8080/tasks/<task-uuid>
+
+3.curl -X DELETE http://localhost:8080/tasks/<task-uuid>
+
